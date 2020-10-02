@@ -1,0 +1,109 @@
+div.wrapper {
+  height: 70vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div.wrapper div.toDoList {
+  height: auto;
+  width: 400px;
+  background-color: #80808038;
+  border-radius: 7px;
+}
+
+div.wrapper div.toDoList h3 {
+  text-align: center;
+  color: grey;
+}
+
+div.wrapper div.toDoList ul li {
+  width: 152px;
+  border: 1px solid grey;
+  display: flex;
+}
+
+div.wrapper div.toDoList ul li input {
+  width: inherit;
+}
+
+div.wrapper div.toDoList ul li .delete {
+  background-color: #ff00009c;
+  padding: 3px;
+  width: auto;
+  color: white;
+  display: inline-block;
+  position: relative;
+  left: 20px;
+  border-radius: 7px;
+}
+
+div.wrapper div.toDoList ul li .update {
+  background-color: #ffff0073;
+  width: auto;
+  color: white;
+  display: inline-block;
+  margin-left: 50px;
+  padding: 3px;
+  border-radius: 7px;
+}
+
+div.wrapper .add_do_to {
+  position: relative;
+  top: 53px;
+  left: 27px;
+  margin-top: 50px;
+  text-align: center;
+  color: grey;
+}
+
+div.wrapper .add_do_to .add {
+  text-align: center;
+  margin-top: 5px;
+  padding: 3px;
+  background-color: green;
+  width: 40px;
+  color: white;
+}
+
+div.wrapper .update_item_wrapper {
+  width: 400px;
+  position: relative;
+  bottom: 46px;
+  right: 234px;
+}
+
+div.wrapper .update_item_wrapper .submit {
+  color: white;
+  background-color: green;
+  padding: 3px;
+  width: 60px;
+  margin-top: 5px;
+}
+
+div.wrapper .update_item_wrapper h5 {
+  color: red;
+  text-align: center;
+  height: 20px;
+}
+
+div.wrapper .update_item_wrapper p span {
+  font-size: 30px;
+  color: red;
+}
+
+@media screen and (max-width: 1064px) {
+  .wrapper {
+    display: unset !important;
+  }
+  .wrapper .add_do_to {
+    top: 200px !important;
+    text-align: unset !important;
+    left: unset !important;
+  }
+  .wrapper .update_item_wrapper {
+    bottom: 82px !important;
+    right: unset !important;
+  }
+}

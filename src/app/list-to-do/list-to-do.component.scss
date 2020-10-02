@@ -1,0 +1,105 @@
+
+div.wrapper {
+  height: 70vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+div.toDoList {
+  height: auto;
+  width: 400px;
+  background-color: #80808038;
+  border-radius: 7px;
+  h3 {
+    text-align: center;
+    color: grey;
+  }
+  ul {
+    li {
+      width: 152px;
+      border: 1px solid grey;
+      display: flex;
+      input {
+        width: inherit;
+      }
+      .delete {
+        background-color: #ff00009c;
+        padding:3px;
+        width: auto;
+        color: white;
+        display: inline-block;
+      position: relative;
+      left: 20px;
+      border-radius: 7px;
+      }
+      .update {
+        background-color: #ffff0073;
+        width: auto;
+        color: white;
+        display: inline-block;
+        margin-left:50px;
+        padding:3px;
+        border-radius: 7px;
+      }
+    }
+  }
+}
+.add_do_to {
+  position: relative;
+  top: 53px;
+  left: 27px;
+  margin-top: 50px;
+  text-align: center;
+  color: grey;
+    .add {
+      text-align: center;
+      margin-top: 5px;
+      padding: 3px;
+      background-color: green;
+      width: 40px;
+      color: white;
+    }
+}
+
+.update_item_wrapper {
+  width: 400px;
+    position: relative;
+    bottom: 46px;
+    right: 234px;
+    .submit {
+      color: white;
+      background-color: green;
+      padding: 3px;
+      width: 60px;
+      margin-top: 5px;
+    }
+    h5 {
+      color:red;
+      text-align: center;
+      height: 20px;
+    }
+    p {
+      span {
+        font-size: 30px;
+        color: red;
+      }
+    }
+}
+}
+
+@media screen and (max-width: 1064px){
+  .wrapper {
+    display: unset !important;
+    .add_do_to {
+      top: 200px !important;
+      text-align: unset !important;
+      left: unset !important;
+}
+.update_item_wrapper {
+
+      bottom: 82px !important;
+      right: unset !important;
+
+}
+  }
+}

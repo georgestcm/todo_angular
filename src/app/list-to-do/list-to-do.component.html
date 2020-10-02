@@ -1,0 +1,25 @@
+<div class="thank_you"><p>Thank you for the chance to apply for this job
+~Georges Tchianga</p></div>
+<div class="wrapper">
+  <div class="toDoList">
+    <h3>List of things to do</h3>
+    <ul>
+      <li *ngFor="let item of dataInformation">
+         <input type="text" value={{item}} disabled=true>
+        <div class="delete" (click)="deleteItem(item)">Delete</div>
+        <div class="update" (click)="selectUpgrade(item)">Update</div>
+     </li>
+    </ul>
+  </div>
+  <div class="add_do_to">
+    Add a new item:
+    <input type="text" [(ngModel)]="newItem">
+     <div class="add" (click)="addItem()">Add </div>
+  </div>
+  <div class="update_item_wrapper">
+    <h5>{{error}}</h5>
+    <p>Item that will be updated is: <span>{{currentItem}}</span></p>
+    <input type="text" [(ngModel)]="updatedItem">
+    <div class="submit"(click)="updateItem()">Submit</div>
+  </div>
+</div>
